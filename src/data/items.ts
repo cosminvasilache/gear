@@ -7,12 +7,79 @@ export type Item = {
 	exclusionTags?: Set<Tag>,
 	category: Category,
 	comments?: String[],
+	important?: boolean,
 	// ammount: number,
 	// unitOfMeasurement: string,
 	// gramsPerUnitOfMeasurement: number
 };
 
 export const items: Item[] = [
+	// ID-PAPERWORK ===================================================
+	{
+		name: 'id',
+		tags: new Set([
+			'all'
+		]),
+		category: 'id-paperwork',
+		important: true,
+	},
+	{
+		name: 'drivers licence',
+		tags: new Set([
+			'all'
+		]),
+		category: 'id-paperwork',
+		important: true,
+	},
+	{
+		name: 'passport',
+		tags: new Set([
+			'all',
+			'abroad',
+		]),
+		exclusionTags: new Set([
+			'domestic',
+		]),
+		category: 'id-paperwork',
+		important: true,
+	},
+	{
+		name: 'visa',
+		tags: new Set([
+			'all',
+			'abroad',
+		]),
+		exclusionTags: new Set([
+			'domestic',
+		]),
+		category: 'id-paperwork',
+		important: true,
+	},
+	{
+		name: 'travel insurance',
+		tags: new Set([
+			'abroad',
+		]),
+		exclusionTags: new Set([
+			'domestic',
+		]),
+		category: 'id-paperwork',
+		important: true,
+	},
+	{
+		name: 'car paperwork',
+		tags: new Set([
+			'driving',
+		]),
+		category: 'id-paperwork',
+		comments: [
+			'Periodic Technical Inspection',
+			'Road tax',
+			// correct tyres
+			// chains
+			// working lights
+		],
+	},
 	// TECH ===========================================================
 	{
 		name: 'phone',
@@ -66,6 +133,21 @@ export const items: Item[] = [
 		]),
 		category: 'tech',
 	},
+	// DATA ===========================================================
+	{
+		name: 'download music',
+		tags: new Set([
+			'all',
+		]),
+		category: 'data-information',
+	},
+	{
+		name: 'download audiobooks',
+		tags: new Set([
+			'all',
+		]),
+		category: 'data-information',
+	},
 	// GEAR ===========================================================
 	{
 		name: 'backpack',
@@ -85,6 +167,9 @@ export const items: Item[] = [
 		name: 'multitool',
 		tags: new Set([
 			'all',
+		]),
+		exclusionTags: new Set([
+			'plane',
 		]),
 		category: 'gear',
 	},
@@ -146,6 +231,14 @@ export const items: Item[] = [
 		name: 'trekking poles',
 		tags: new Set([
 			'hiking',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'ice axe',
+		tags: new Set([
+			'winter',
+			'glacier-travel',
 		]),
 		category: 'gear',
 	},
@@ -309,5 +402,29 @@ export const items: Item[] = [
 			'hiking',
 		]),
 		category: 'clothes',
+	},
+	{
+		name: 'sun cap',
+		tags: new Set([
+			'summer',
+		]),
+		category: 'clothes',
+	},
+	{
+		name: 'warm hat',
+		tags: new Set([
+			'autumn',
+			'winter',
+		]),
+		category: 'clothes',
+	},
+	// ACCESSORIES ====================================================
+	{
+		name: 'sunglasses',
+		tags: new Set([
+			'driving',
+			'sunny',
+		]),
+		category: 'accessories',
 	},
 ];

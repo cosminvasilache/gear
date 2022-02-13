@@ -12,6 +12,7 @@ export const tags = [
 	'short-stay',
 	'long-stay',
 	'work',
+	'driving',
 	'sport',
 	'hiking',
 	'climbing',
@@ -19,4 +20,7 @@ export const tags = [
 	'glacier-travel',
 	'snowboarding',
 	'water',
+	'domestic',
+	'abroad',
+	'plane',
 ] as const;
