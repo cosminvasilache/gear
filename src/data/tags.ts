@@ -2,6 +2,7 @@ export type Tag = typeof tags[number];
 
 export const tags = [
 	'all',
+	'work',
 	'one-day',
 	'spring',
 	'summer',
@@ -11,16 +12,17 @@ export const tags = [
 	'rainy',
 	'short-stay',
 	'long-stay',
-	'work',
-	'driving',
 	'sport',
 	'hiking',
 	'climbing',
 	'via-ferrata',
 	'glacier-travel',
 	'snowboarding',
+	'mountain-biking',
 	'water',
+	'snow',
 	'domestic',
 	'abroad',
+	'driving',
 	'plane',
 ] as const;

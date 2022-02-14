@@ -2,16 +2,16 @@ import { Tag } from './tags';
 import { Category } from './categories';
 
 export type Item = {
-	name: string,
-	tags: Set<Tag>,
-	exclusionTags?: Set<Tag>,
-	category: Category,
-	comments?: String[],
-	important?: boolean,
-	// ammount: number,
-	// unitOfMeasurement: string,
-	// gramsPerUnitOfMeasurement: number
-};
+	name: string;
+	tags: Set<Tag>;
+	exclusionTags?: Set<Tag>;
+	category: Category;
+	comments?: String[];
+	important?: boolean;
+	// ammount: number;
+	// unitOfMeasurement: string;
+	// gramsPerUnitOfMeasurement: number;
+}
 
 export const items: Item[] = [
 	// ID-PAPERWORK ===================================================
@@ -135,6 +135,13 @@ export const items: Item[] = [
 	},
 	// DATA ===========================================================
 	{
+		name: 'download maps',
+		tags: new Set([
+			'all',
+		]),
+		category: 'data-information',
+	},
+	{
 		name: 'download music',
 		tags: new Set([
 			'all',
@@ -142,7 +149,22 @@ export const items: Item[] = [
 		category: 'data-information',
 	},
 	{
+		name: 'download books',
+		tags: new Set([
+			'all',
+		]),
+		category: 'data-information',
+		comments: ['You might want to read instead of listen. You might not have headphones. It might be loud.'],
+	},
+	{
 		name: 'download audiobooks',
+		tags: new Set([
+			'all',
+		]),
+		category: 'data-information',
+	},
+	{
+		name: 'download movies',
 		tags: new Set([
 			'all',
 		]),
@@ -251,6 +273,15 @@ export const items: Item[] = [
 		category: 'gear',
 	},
 	{
+		name: 'gaiter',
+		tags: new Set([
+			'winter',
+			'snow',
+			'hiking',
+		]),
+		category: 'gear',
+	},
+	{
 		name: 'climbing shoes',
 		tags: new Set([
 			'climbing',
@@ -279,9 +310,29 @@ export const items: Item[] = [
 	},
 	{
 		name: 'belaying device',
-		tags: new Set([]),
+		tags: new Set([
+			'climbing',
+		]),
 		category: 'gear',
 		comments: ['grigri', 'reverso'],
+	},
+	{
+		name: 'rappel/abseil device',
+		tags: new Set([
+			'climbing',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'helmet',
+		tags: new Set([
+			'climbing',
+			'via-ferrata',
+			'glacier-travel',
+			'snowboarding',
+			'mountain-biking',
+		]),
+		category: 'gear',
 	},
 	// TOILETRIES =====================================================
 	{
