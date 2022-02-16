@@ -17,27 +17,28 @@ export const items: Item[] = [
 	// ID-PAPERWORK ===================================================
 	{
 		name: 'id',
-		tags: new Set([
-			'all'
+		tags: new Set<Tag>([
+			'all',
 		]),
 		category: 'id-paperwork',
 		important: true,
 	},
 	{
 		name: 'drivers licence',
-		tags: new Set([
-			'all'
-		]),
+		tags: new Set<Tag>(([
+			'all',
+			'driving',
+		])),
 		category: 'id-paperwork',
 		important: true,
 	},
 	{
 		name: 'passport',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 			'abroad',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'domestic',
 		]),
 		category: 'id-paperwork',
@@ -45,11 +46,11 @@ export const items: Item[] = [
 	},
 	{
 		name: 'visa',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 			'abroad',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'domestic',
 		]),
 		category: 'id-paperwork',
@@ -57,10 +58,10 @@ export const items: Item[] = [
 	},
 	{
 		name: 'travel insurance',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'abroad',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'domestic',
 		]),
 		category: 'id-paperwork',
@@ -68,7 +69,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'car paperwork',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'driving',
 		]),
 		category: 'id-paperwork',
@@ -83,52 +84,52 @@ export const items: Item[] = [
 	// TECH ===========================================================
 	{
 		name: 'phone',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all'
 		]),
 		category: 'tech',
 	},
 	{
 		name: 'phone charger + cable',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day'
 		]),
 		category: 'tech',
 	},
 	{
 		name: 'power bank + cable',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'tech',
 	},
 	{
 		name: 'wireless earbuds',
-		tags: new Set([
-			'all'
+		tags: new Set<Tag>([
+			'all',
 		]),
 		category: 'tech',
 	},
 	{
 		name: 'watch',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all'
 		]),
 		category: 'tech',
 	},
 	{
 		name: 'camera',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'tech',
 	},
 	{
 		name: 'monitor',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'work',
 		]),
 		category: 'tech',
@@ -136,21 +137,21 @@ export const items: Item[] = [
 	// DATA ===========================================================
 	{
 		name: 'download maps',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'data-information',
 	},
 	{
 		name: 'download music',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'data-information',
 	},
 	{
 		name: 'download books',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'data-information',
@@ -158,14 +159,14 @@ export const items: Item[] = [
 	},
 	{
 		name: 'download audiobooks',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'data-information',
 	},
 	{
 		name: 'download movies',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'data-information',
@@ -173,32 +174,32 @@ export const items: Item[] = [
 	// GEAR ===========================================================
 	{
 		name: 'backpack',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'backpack raincover',
-		tags: new Set([
-			'rainy',
+		tags: new Set<Tag>([
+			'rain',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'multitool',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'plane',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'first-aid kit',
-		tags: new Set([
-			'sport',
+		tags: new Set<Tag>([
+			'active-sport',
 			'snowboarding',
 			'climbing',
 			'hiking',
@@ -208,7 +209,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'buff / loop',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'gear',
@@ -216,49 +217,49 @@ export const items: Item[] = [
 	{
 
 		name: 'carabiner',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'paracord',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'ligher',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'hidration system',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'headlamp',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'trekking poles',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'hiking',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'ice axe',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'winter',
 			'glacier-travel',
 		]),
@@ -266,7 +267,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'hiking boots',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'hiking',
 			'via-ferrata',
 		]),
@@ -274,7 +275,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'gaiter',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'winter',
 			'snow',
 			'hiking',
@@ -283,7 +284,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'climbing shoes',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'climbing',
 			'via-ferrata',
 		]),
@@ -291,7 +292,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'harness',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'climbing',
 			'via-ferrata',
 			'glacier-travel',
@@ -300,7 +301,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'climbing rope',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'climbing',
 			'glacier-travel',
 			'via-ferrata',
@@ -310,7 +311,7 @@ export const items: Item[] = [
 	},
 	{
 		name: 'belaying device',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'climbing',
 		]),
 		category: 'gear',
@@ -318,14 +319,14 @@ export const items: Item[] = [
 	},
 	{
 		name: 'rappel/abseil device',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'climbing',
 		]),
 		category: 'gear',
 	},
 	{
 		name: 'helmet',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'climbing',
 			'via-ferrata',
 			'glacier-travel',
@@ -337,64 +338,64 @@ export const items: Item[] = [
 	// TOILETRIES =====================================================
 	{
 		name: 'toothbrush',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day',
 		]),
 		category: 'toiletries',
 	},
 	{
 		name: 'toothpaste',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day',
 		]),
 		category: 'toiletries',
 	},
 	{
 		name: 'dental floss',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day',
 		]),
 		category: 'toiletries',
 	},
 	{
 		name: 'shower gel',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day',
 		]),
 		category: 'toiletries',
 	},
 	{
 		name: 'nail clippers',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
 		category: 'toiletries',
 	},
 	{
 		name: 'towel',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all'
 		]),
 		category: 'toiletries',
 	},
 	{
 		name: 'bath slippers',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all'
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day',
 		]),
 		category: 'toiletries',
@@ -402,17 +403,17 @@ export const items: Item[] = [
 	// PERSONAL =======================================================
 	{
 		name: 'underwear',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day',
 		]),
 		category: 'personal',
 	},
 	{
 		name: 'socks',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'all'
 		]),
 		category: 'personal',
@@ -420,7 +421,7 @@ export const items: Item[] = [
 	// PERSONAL-CARE ==================================================
 	{
 		name: 'sunscreen',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'summer',
 			'winter',
 			'glacier-travel',
@@ -429,8 +430,8 @@ export const items: Item[] = [
 	},
 	{
 		name: 'after sun / hydrating lotion',
-		tags: new Set([
-			'sunny',
+		tags: new Set<Tag>([
+			'sun',
 			'summer',
 			'winter',
 			'snowboarding',
@@ -438,7 +439,7 @@ export const items: Item[] = [
 			'glacier-travel',
 			'via-ferrata',
 		]),
-		exclusionTags: new Set([
+		exclusionTags: new Set<Tag>([
 			'one-day'
 		]),
 		category: 'personal-care',
@@ -446,7 +447,7 @@ export const items: Item[] = [
 	// CLOTHES ========================================================
 	{
 		name: 'gloves',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'autumn',
 			'winter',
 			'snowboarding',
@@ -456,14 +457,14 @@ export const items: Item[] = [
 	},
 	{
 		name: 'sun cap',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'summer',
 		]),
 		category: 'clothes',
 	},
 	{
 		name: 'warm hat',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'autumn',
 			'winter',
 		]),
@@ -472,9 +473,9 @@ export const items: Item[] = [
 	// ACCESSORIES ====================================================
 	{
 		name: 'sunglasses',
-		tags: new Set([
+		tags: new Set<Tag>([
 			'driving',
-			'sunny',
+			'sun',
 		]),
 		category: 'accessories',
 	},
