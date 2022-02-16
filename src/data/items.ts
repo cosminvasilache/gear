@@ -14,7 +14,7 @@ export type Item = {
 }
 
 export const items: Item[] = [
-	// ID-PAPERWORK ===================================================
+	// #region ID-PAPERWORK
 	{
 		name: 'id',
 		tags: new Set<Tag>([
@@ -81,7 +81,8 @@ export const items: Item[] = [
 			// working lights
 		],
 	},
-	// TECH ===========================================================
+	// #endregion
+	// #region TECH 
 	{
 		name: 'phone',
 		tags: new Set<Tag>([
@@ -134,7 +135,8 @@ export const items: Item[] = [
 		]),
 		category: 'tech',
 	},
-	// DATA ===========================================================
+	// #endregion
+	// #region DATA-INFORMATION
 	{
 		name: 'download maps',
 		tags: new Set<Tag>([
@@ -171,7 +173,8 @@ export const items: Item[] = [
 		]),
 		category: 'data-information',
 	},
-	// GEAR ===========================================================
+	// #endregion
+	// #region GEAR
 	{
 		name: 'backpack',
 		tags: new Set<Tag>([
@@ -335,7 +338,8 @@ export const items: Item[] = [
 		]),
 		category: 'gear',
 	},
-	// TOILETRIES =====================================================
+	// #endregion
+	// #region TOILETRIES
 	{
 		name: 'toothbrush',
 		tags: new Set<Tag>([
@@ -400,7 +404,8 @@ export const items: Item[] = [
 		]),
 		category: 'toiletries',
 	},
-	// PERSONAL =======================================================
+	// #endregion
+	// #region PERSONAL
 	{
 		name: 'underwear',
 		tags: new Set<Tag>([
@@ -418,7 +423,8 @@ export const items: Item[] = [
 		]),
 		category: 'personal',
 	},
-	// PERSONAL-CARE ==================================================
+	// #endregion
+	// #region PERSONAL-CARE
 	{
 		name: 'sunscreen',
 		tags: new Set<Tag>([
@@ -444,7 +450,8 @@ export const items: Item[] = [
 		]),
 		category: 'personal-care',
 	},
-	// CLOTHES ========================================================
+	// #endregion
+	// #region CLOTHES
 	{
 		name: 'gloves',
 		tags: new Set<Tag>([
@@ -470,7 +477,8 @@ export const items: Item[] = [
 		]),
 		category: 'clothes',
 	},
-	// ACCESSORIES ====================================================
+	// #endregion
+	// #region ACCESSORIES
 	{
 		name: 'sunglasses',
 		tags: new Set<Tag>([
@@ -479,4 +487,5 @@ export const items: Item[] = [
 		]),
 		category: 'accessories',
 	},
+	// #endregion
 ];
