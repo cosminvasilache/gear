@@ -36,7 +36,9 @@ const meansOfTransportationTags = [
 ] as const;
 
 const activityTags = [
+	'sightseeing',
 	'active-sport',
+	'camping',
 	'hiking',
 	'climbing',
 	'via-ferrata',

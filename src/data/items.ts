@@ -35,7 +35,6 @@ export const items: Item[] = [
 	{
 		name: 'passport',
 		tags: new Set<Tag>([
-			'all',
 			'abroad',
 		]),
 		exclusionTags: new Set<Tag>([
@@ -47,7 +46,6 @@ export const items: Item[] = [
 	{
 		name: 'visa',
 		tags: new Set<Tag>([
-			'all',
 			'abroad',
 		]),
 		exclusionTags: new Set<Tag>([
@@ -111,6 +109,52 @@ export const items: Item[] = [
 		name: 'wireless earbuds',
 		tags: new Set<Tag>([
 			'all',
+		]),
+		category: 'tech',
+	},
+	{
+		name: 'wireless noisecanceling headset',
+		tags: new Set<Tag>([
+			'plane',
+			'work',
+			'leisure',
+			'long-stay',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
+		]),
+		category: 'tech',
+	},
+	{
+		name: 'laptop',
+		tags: new Set<Tag>([
+			'work',
+			'sightseeing',
+			'long-stay',
+		]),
+		category: 'tech',
+	},
+	{
+		name: 'laptop charger',
+		tags: new Set<Tag>([
+			'work',
+			'sightseeing',
+			'long-stay',
+		]),
+		category: 'tech',
+	},
+	{
+		name: 'wired earbuds',
+		tags: new Set<Tag>([
+			'work',
+		]),
+		category: 'tech',
+		comments: ['For redundancy.'],
+	},
+	{
+		name: '3.5mm jack to USB-C adapter',
+		tags: new Set<Tag>([
+			'work',
 		]),
 		category: 'tech',
 	},
@@ -179,8 +223,10 @@ export const items: Item[] = [
 		name: 'backpack',
 		tags: new Set<Tag>([
 			'all',
+			'snowboarding',
 		]),
 		category: 'gear',
+		comments: ['Pick the right type and size for the ocasion.', 'Bring multiple if you are doing more than one activity.'],
 	},
 	{
 		name: 'backpack raincover',
@@ -190,9 +236,40 @@ export const items: Item[] = [
 		category: 'gear',
 	},
 	{
+		name: 'water resistant jacket',
+		tags: new Set<Tag>([
+			'rain',
+			'hiking',
+			'climbing',
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'water resistant overpants',
+		tags: new Set<Tag>([
+			'rain',
+			'hiking',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'dry bag',
+		tags: new Set<Tag>([
+			'rain',
+			'snow',
+			'plane',
+		]),
+		category: 'gear',
+	},
+	{
 		name: 'multitool',
 		tags: new Set<Tag>([
 			'all',
+			'camping',
+			'hiking',
+			'climbing',
+			'snowboarding',
 		]),
 		exclusionTags: new Set<Tag>([
 			'plane',
@@ -218,7 +295,6 @@ export const items: Item[] = [
 		category: 'gear',
 	},
 	{
-
 		name: 'carabiner',
 		tags: new Set<Tag>([
 			'all',
@@ -261,9 +337,105 @@ export const items: Item[] = [
 		category: 'gear',
 	},
 	{
+		name: 'trekking shoes',
+		tags: new Set<Tag>([
+			'hiking',
+			'climbing',
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'hammock',
+		tags: new Set<Tag>([
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'tent',
+		tags: new Set<Tag>([
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'inflating mattress',
+		tags: new Set<Tag>([
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'sleeping bag',
+		tags: new Set<Tag>([
+			'camping',
+		]),
+		category: 'gear',
+		comments: ['Thickness according to temperature.']
+	},
+	{
+		name: 'sleeping bag liner',
+		tags: new Set<Tag>([
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'gas stove / primus',
+		tags: new Set<Tag>([
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'spork',
+		tags: new Set<Tag>([
+			'camping',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'mosquito spray',
+		tags: new Set<Tag>([
+			'camping',
+			'water',
+		]),
+		exclusionTags: new Set<Tag>([
+			'winter',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'pen + paper',
+		tags: new Set<Tag>([
+			'camping',
+			'leisure',
+			'plane',
+			'abroad',
+			'work',
+		]),
+		category: 'gear',
+	},
+	{
 		name: 'ice axe',
 		tags: new Set<Tag>([
 			'winter',
+			'glacier-travel',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'ice cleats',
+		tags: new Set<Tag>([
+			'winter',
+			'glacier-travel',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'ice screws',
+		tags: new Set<Tag>([
 			'glacier-travel',
 		]),
 		category: 'gear',
@@ -338,6 +510,112 @@ export const items: Item[] = [
 		]),
 		category: 'gear',
 	},
+	{
+		name: 'via-ferrata kit',
+		tags: new Set<Tag>([
+			'via-ferrata',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'via-ferrata gloves',
+		tags: new Set<Tag>([
+			'via-ferrata',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard + bindings',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard boots',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard helmet',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard goggles',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard goggle lenses',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard mask',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+		comments: ['Magnetic goggle mask.'],
+	},
+	{
+		name: 'balaclava',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard jacket',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard gloves',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'crash pants',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'knee protection pads',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard pants',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
+	{
+		name: 'snowboard travel bag',
+		tags: new Set<Tag>([
+			'snowboarding',
+		]),
+		category: 'gear',
+	},
 	// #endregion
 	// #region TOILETRIES
 	{
@@ -374,6 +652,7 @@ export const items: Item[] = [
 		name: 'shower gel',
 		tags: new Set<Tag>([
 			'all',
+			'camping',
 		]),
 		exclusionTags: new Set<Tag>([
 			'one-day',
@@ -390,17 +669,30 @@ export const items: Item[] = [
 	{
 		name: 'towel',
 		tags: new Set<Tag>([
-			'all'
+			'all',
+			'water',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
 		]),
 		category: 'toiletries',
 	},
 	{
 		name: 'bath slippers',
 		tags: new Set<Tag>([
-			'all'
+			'all',
+			'camping',
+			'abroad',
 		]),
 		exclusionTags: new Set<Tag>([
 			'one-day',
+		]),
+		category: 'toiletries',
+	},
+	{
+		name: 'toilet paper',
+		tags: new Set<Tag>([
+			'all',
 		]),
 		category: 'toiletries',
 	},
@@ -431,6 +723,8 @@ export const items: Item[] = [
 			'summer',
 			'winter',
 			'glacier-travel',
+			'climbing',
+			'snowboarding',
 		]),
 		category: 'personal-care',
 	},
@@ -447,6 +741,26 @@ export const items: Item[] = [
 		]),
 		exclusionTags: new Set<Tag>([
 			'one-day'
+		]),
+		category: 'personal-care',
+	},
+	{
+		name: 'lip balm',
+		tags: new Set<Tag>([
+			'all',
+			'sun',
+			'winter',
+		]),
+		category: 'personal-care',
+	},
+	{
+		name: 'medicine',
+		tags: new Set<Tag>([
+			'all',
+			'abroad',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
 		]),
 		category: 'personal-care',
 	},
@@ -477,6 +791,24 @@ export const items: Item[] = [
 		]),
 		category: 'clothes',
 	},
+	{
+		name: 'sandals',
+		tags: new Set<Tag>([
+			'camping',
+			'hiking',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
+		]),
+		category: 'clothes',
+	},
+	{
+		name: 'water resistant shoes',
+		tags: new Set<Tag>([
+			'sightseeing',
+		]),
+		category: 'clothes',
+	},
 	// #endregion
 	// #region ACCESSORIES
 	{
@@ -486,6 +818,70 @@ export const items: Item[] = [
 			'sun',
 		]),
 		category: 'accessories',
+	},
+	// #endregion
+	// #region ENTERTAINMENT
+	{
+		name: 'playing cards',
+		tags: new Set<Tag>([
+			'leisure',
+		]),
+		category: 'entertainment',
+	},
+	{
+		name: 'board games',
+		tags: new Set<Tag>([
+			'leisure',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
+		]),
+		category: 'entertainment',
+	},
+	// #endregion
+	// #region FITNESS
+	{
+		name: 'hand grippers',
+		tags: new Set<Tag>([
+			'all',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
+		]),
+		category: 'fitness',
+	},
+	{
+		name: 'hand egg',
+		tags: new Set<Tag>([
+			'all',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
+		]),
+		category: 'fitness',
+	},
+	{
+		name: 'elastic bands',
+		tags: new Set<Tag>([
+			'all',
+		]),
+		exclusionTags: new Set<Tag>([
+			'one-day',
+		]),
+		category: 'fitness',
+		comments: ['for legs, shoulders'],
+	},
+	// #endregion
+	// #region FOOD
+	{
+		name: 'protein bar',
+		tags: new Set<Tag>([
+			'all',
+			'camping',
+			'climbing',
+			'snowboarding',
+		]),
+		category: 'food',
 	},
 	// #endregion
 ];

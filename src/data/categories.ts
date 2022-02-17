@@ -10,4 +10,7 @@ export const categories = [
 	'personal-care',
 	'clothes',
 	'accessories',
+	'entertainment',
+	'fitness',
+	'food',
 ] as const;
